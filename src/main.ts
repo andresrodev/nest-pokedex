@@ -14,7 +14,6 @@ async function bootstrap() {
     }
   }))
   await app.listen(process.env.PORT ?? 3001);
-  console.log('✅ MONGODB en runtime:', process.env.MONGODB);
   console.log(`APP running on port ${process.env.PORT}`)
 }
 bootstrap();

@@ -58,7 +58,7 @@ $ yarn run test:cov
 ```
 
 # DB
-docker-compose -up -d
+docker-compose up -d
 
 ## Deployment
 

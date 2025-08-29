@@ -13,6 +13,8 @@ import { JoinValidationSchema } from './config/joid.validation';
 @Module({
   imports: [
   ConfigModule.forRoot({
+    isGlobal: true,
+    envFilePath: process.env.NODE_ENV !== 'production' ? '.env' : undefined,
     load: [EnvConfiguration],
     validationSchema: JoinValidationSchema
   }),
